@@ -5,6 +5,12 @@ import java.util.function.Consumer;
 import java.util.function.ToIntFunction;
 import java.util.List;
 
+/**
+ * <li><strong>Desafio 2</strong> - Imprima a soma dos números pares da lista:</li>
+ * <p>
+ * Utilizando a Stream API, realize a soma dos números pares da lista e exiba o resultado no console.
+ * </p>
+ */
 public class Desafio2 {
 
 	public static void main(String[] args) {

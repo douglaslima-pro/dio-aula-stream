@@ -5,6 +5,12 @@ import java.util.Comparator;
 import java.util.function.Consumer;
 import java.util.List;
 
+/**
+ * <li><strong>Desafio 7</strong> - Encontrar o segundo número maior da lista:</li>
+ * <p>
+ * Com a ajuda da Stream API, encontre o segundo número maior da lista e exiba o resultado no console.
+ * </p>
+ */
 public class Desafio7 {
 
 	public static void main(String[] args) {

@@ -5,6 +5,12 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.List;
 
+/**
+ * <li><strong>Desafio 6</strong> - Verificar se a lista contém algum número maior que 10:</li>
+ * <p>
+ * Utilize a Stream API para verificar se a lista contém algum número maior que 10 e exiba o resultado no console.
+ * </p>
+ */
 public class Desafio6 {
 
 	public static void main(String[] args) {

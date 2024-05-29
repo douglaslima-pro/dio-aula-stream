@@ -5,6 +5,12 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.List;
 
+/**
+ * <li><strong>Desafio 3</strong> - Verifique se todos os números da lista são positivos:</li>
+ * <p>
+ * Com a ajuda da Stream API, verifique se todos os números da lista são positivos e exiba o resultado no console.
+ * </p>
+ */
 public class Desafio3 {
 
 	public static void main(String[] args) {

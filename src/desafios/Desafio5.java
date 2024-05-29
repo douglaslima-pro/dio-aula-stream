@@ -6,6 +6,12 @@ import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
 import java.util.List;
 
+/**
+ * <li><strong>Desafio 5</strong> - Calcule a média dos números maiores que 5:</li>
+ * <p>
+ * Com a Stream API, calcule a média dos números maiores que 5 e exiba o resultado no console.
+ * </p>
+ */
 public class Desafio5 {
 
 	public static void main(String[] args) {

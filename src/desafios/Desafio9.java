@@ -2,40 +2,37 @@ package desafios;
 
 import java.util.Arrays;
 import java.util.function.Consumer;
+import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
- * <li><strong>Desafio 1</strong> - Mostre a lista na ordem numérica:</li>
+ * <li><strong>Desafio 9</strong> - Verificar se todos os números da lista são distintos (não se repetem):</li>
  * <p>
- * Crie um programa que utilize a Stream API para ordenar a lista de números em
- * ordem crescente e a exiba no console.
+ * Com a Stream API, verifique se todos os números da lista são distintos (não se repetem) e exiba o resultado no console.
  * </p>
  */
-public class Desafio1 {
+public class Desafio9 {
 
 	public static void main(String[] args) {
 		List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
-
+		
 		// consumer
 		Consumer<Integer> imprimirLista = elemento -> {
 			System.out.print(" " + elemento + " ");
 		};
-
+		
 		System.out.print("[");
 		numeros.forEach(imprimirLista);
 		System.out.println("]");
-
-		List<Integer> numerosOrdenados = numeros
+		
+		boolean numerosDistintos =
+				numeros
 				.stream()
-				.sorted()
-				.collect(Collectors.toList());
+				.allMatch(new HashSet<>()::add);
 
 		System.out.println();
-		System.out.println("Ordem crescente:");
-		System.out.print("[");
-		numerosOrdenados.forEach(imprimirLista);
-		System.out.println("]");
+		
+		System.out.println("Todos os números são distintos? " + numerosDistintos);
 	}
 
 }
